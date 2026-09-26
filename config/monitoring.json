@@ -1,0 +1,12 @@
+{
+  "thresholds": {
+    "cpu": {
+      "warning": 75,
+      "critical": 90
+    },
+    "memory": {
+      "warning": 80,
+      "critical": 90
+    }
+  }
+}

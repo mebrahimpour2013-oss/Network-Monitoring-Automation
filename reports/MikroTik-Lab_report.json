@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-09-26T10:09:43.324311+00:00",
+  "device": {
+    "name": "MikroTik-Lab",
+    "host": "192.168.10.1",
+    "type": "mikrotik"
+  },
+  "overall_status": "UP",
+  "checks": [
+    {
+      "name": "ping",
+      "status": "UP",
+      "message": "Host 192.168.10.1 is reachable",
+      "value": 1.08,
+      "details": {
+        "latency_ms": 1.08,
+        "check_time_ms": 1.51
+      }
+    },
+    {
+      "name": "tcp_8728",
+      "status": "UP",
+      "message": "TCP port 8728 is open",
+      "value": 8728,
+      "details": {}
+    },
+    {
+      "name": "mikrotik_api",
+      "status": "UP",
+      "message": "MikroTik API is reachable",
+      "value": null,
+      "details": {}
+    },
+    {
+      "name": "identity",
+      "status": "UP",
+      "message": "Router identity: Remote-Office-MT",
+      "value": "Remote-Office-MT",
+      "details": {}
+    },
+    {
+      "name": "routeros_version",
+      "status": "UP",
+      "message": "RouterOS version: 7.23.7 (long-term)",
+      "value": "7.23.7 (long-term)",
+      "details": {}
+    },
+    {
+      "name": "cpu",
+      "status": "UP",
+      "message": "CPU load is normal: 3.0%",
+      "value": 3.0,
+      "details": {
+        "cpu_load_percent": 3.0,
+        "warning_threshold": 75,
+        "critical_threshold": 90
+      }
+    },
+    {
+      "name": "memory",
+      "status": "UP",
+      "message": "Memory usage is normal: 56.7%",
+      "value": 56.7,
+      "details": {
+        "total_memory": 67108864.0,
+        "free_memory": 29057024.0,
+        "used_memory": 38051840.0,
+        "usage_percent": 56.7,
+        "warning_threshold": 80,
+        "critical_threshold": 90
+      }
+    },
+    {
+      "name": "uptime",
+      "status": "UP",
+      "message": "Router uptime: 3h22m31s",
+      "value": "3h22m31s",
+      "details": {}
+    },
+    {
+      "name": "interfaces",
+      "status": "UP",
+      "message": "8 of 11 interfaces are running",
+      "value": 8,
+      "details": {
+        "total_interfaces": 11,
+        "running_interfaces": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+2026-09-26 09:54:09,745 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 09:54:09,990 | INFO | Monitoring completed for Google-DNS
+2026-09-26 09:54:09,991 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 09:54:10,260 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 09:57:12,827 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 09:57:13,078 | INFO | Monitoring completed for Google-DNS
+2026-09-26 09:57:13,079 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 09:57:13,324 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 09:58:00,048 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 09:58:00,308 | INFO | Overall status for Google-DNS: UP
+2026-09-26 09:58:00,308 | INFO | Monitoring completed for Google-DNS
+2026-09-26 09:58:00,309 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 09:58:00,550 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 09:58:00,550 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 10:16:37,735 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:18:19,587 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:24:48,231 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:26:26,463 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:36:03,848 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:39:43,364 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:39:43,852 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 10:39:43,852 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 10:39:43,853 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 10:39:44,120 | INFO | Overall status for Google-DNS: UP
+2026-09-26 10:39:44,121 | INFO | Monitoring completed for Google-DNS
+2026-09-26 10:39:44,121 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 10:39:44,359 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 10:39:44,359 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 10:41:26,877 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:41:44,732 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:41:46,130 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 10:41:46,130 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 10:41:46,131 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 10:41:46,397 | INFO | Overall status for Google-DNS: UP
+2026-09-26 10:41:46,398 | INFO | Monitoring completed for Google-DNS
+2026-09-26 10:41:46,398 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 10:41:46,668 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 10:41:46,669 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 10:49:07,191 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:49:07,651 | INFO | Overall status for MikroTik-Lab: WARNING
+2026-09-26 10:49:07,651 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 10:49:07,652 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 10:49:07,893 | INFO | Overall status for Google-DNS: UP
+2026-09-26 10:49:07,893 | INFO | Monitoring completed for Google-DNS
+2026-09-26 10:49:07,894 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 10:49:08,124 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 10:49:08,125 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 10:54:24,790 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 10:54:25,488 | INFO | Overall status for MikroTik-Lab: WARNING
+2026-09-26 10:54:25,488 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 10:54:25,489 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 10:54:25,855 | INFO | Overall status for Google-DNS: UP
+2026-09-26 10:54:25,855 | INFO | Monitoring completed for Google-DNS
+2026-09-26 10:54:25,856 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 10:54:26,214 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 10:54:26,214 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:04:11,800 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:04:12,149 | INFO | Overall status for MikroTik-Lab: WARNING
+2026-09-26 11:04:12,149 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:04:12,150 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:04:12,375 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:04:12,375 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:04:12,375 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:04:12,626 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:04:12,626 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:13:10,243 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:13:12,188 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:13:12,188 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:13:12,189 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:13:12,418 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:13:12,419 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:13:12,419 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:13:12,667 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:13:12,668 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:16:26,664 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:16:27,504 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:16:27,504 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:16:27,505 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:16:28,070 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:16:28,070 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:16:28,070 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:16:28,334 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:16:28,334 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:27:42,420 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:27:43,221 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:27:43,221 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:27:43,222 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:28:57,459 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:28:57,807 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:28:57,807 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:28:57,808 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:28:57,855 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:28:57,855 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:28:57,855 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:28:58,108 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:28:58,108 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:28:58,108 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:28:58,373 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:28:58,374 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:32:11,698 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:32:12,051 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:32:12,051 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:32:12,052 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:33:27,574 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:33:27,922 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:33:27,922 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:33:27,923 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:33:27,943 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:33:27,943 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:33:27,943 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:33:28,178 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:33:28,178 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:33:28,178 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:33:28,430 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:33:28,430 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:34:51,407 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:34:51,765 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:34:51,765 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:34:51,765 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:34:51,784 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:34:51,784 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:34:51,784 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:34:52,026 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:34:52,026 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:34:52,027 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:34:52,301 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:34:52,301 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:38:40,687 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:38:41,072 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:38:41,073 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:38:41,073 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:38:42,370 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:38:42,371 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:38:42,371 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:38:42,625 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:38:42,625 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:38:42,625 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:38:42,895 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:38:42,895 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:43:05,071 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:43:05,424 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:43:05,424 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:43:05,425 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:43:06,745 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:43:06,745 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:43:06,745 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:43:06,988 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:43:06,988 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:43:06,988 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:43:07,264 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:43:07,264 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:45:48,658 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:45:48,997 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:45:48,997 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:45:48,998 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:45:49,073 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:45:49,073 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:45:49,074 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:45:49,333 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:45:49,334 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:45:49,334 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:45:49,585 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:45:49,585 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:46:08,376 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:46:09,906 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:46:09,906 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:46:09,907 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:46:11,297 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:46:11,297 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:46:11,298 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:46:11,564 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:46:11,565 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:46:11,565 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:46:12,142 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:46:12,142 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:47:44,550 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:47:45,899 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:47:45,899 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:47:45,900 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:47:50,923 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:47:50,923 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:47:50,924 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:47:51,165 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:47:51,165 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:47:51,165 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:47:51,422 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:47:51,422 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:47:54,704 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:47:56,307 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:47:56,308 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:47:56,309 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:48:03,594 | INFO | Overall status for Cisco-Lab: UP
+2026-09-26 11:48:03,595 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:48:03,595 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:48:03,868 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:48:03,869 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:48:03,869 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:48:04,121 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:48:04,121 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:48:18,876 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:48:19,830 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:48:19,830 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:48:19,831 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:48:24,860 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 11:48:24,860 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:48:24,861 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:48:25,144 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:48:25,145 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:48:25,145 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:48:25,388 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:48:25,388 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 11:48:34,915 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 11:48:35,645 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 11:48:35,646 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 11:48:35,646 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 11:48:41,309 | INFO | Overall status for Cisco-Lab: UP
+2026-09-26 11:48:41,309 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 11:48:41,310 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 11:48:41,555 | INFO | Overall status for Google-DNS: UP
+2026-09-26 11:48:41,555 | INFO | Monitoring completed for Google-DNS
+2026-09-26 11:48:41,555 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 11:48:41,788 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 11:48:41,788 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 12:11:49,487 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 12:11:52,804 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 12:11:52,804 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 12:11:52,805 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 12:12:09,570 | INFO | Overall status for Cisco-Lab: UP
+2026-09-26 12:12:09,570 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 12:12:09,571 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 12:12:09,832 | INFO | Overall status for Google-DNS: UP
+2026-09-26 12:12:09,833 | INFO | Monitoring completed for Google-DNS
+2026-09-26 12:12:09,833 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 12:12:10,103 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 12:12:10,103 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 12:17:32,084 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 12:17:33,012 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 12:17:33,012 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 12:17:33,013 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 12:25:09,841 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 12:25:10,194 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 12:25:10,195 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 12:25:10,195 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 12:25:22,591 | INFO | Overall status for Cisco-Lab: UP
+2026-09-26 12:25:22,591 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 12:25:22,592 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 12:25:22,856 | INFO | Overall status for Google-DNS: UP
+2026-09-26 12:25:22,856 | INFO | Monitoring completed for Google-DNS
+2026-09-26 12:25:22,856 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 12:25:23,122 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 12:25:23,122 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 12:27:36,853 | INFO | Overall status for Cisco-Lab: WARNING
+2026-09-26 12:27:36,854 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 12:27:36,855 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 12:27:37,145 | INFO | Overall status for Google-DNS: UP
+2026-09-26 12:27:37,145 | INFO | Monitoring completed for Google-DNS
+2026-09-26 12:27:37,146 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 12:27:37,406 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 12:27:37,406 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 12:28:31,656 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 12:28:32,246 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 12:28:32,246 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 12:28:32,247 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 12:28:33,162 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 12:28:33,162 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 12:28:33,163 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 12:28:33,399 | INFO | Overall status for Google-DNS: UP
+2026-09-26 12:28:33,400 | INFO | Monitoring completed for Google-DNS
+2026-09-26 12:28:33,400 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 12:28:33,670 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 12:28:33,670 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 12:29:32,707 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 12:29:33,059 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 12:29:33,059 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 12:29:33,060 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 12:29:35,723 | INFO | Overall status for Cisco-Lab: DOWN
+2026-09-26 12:29:35,723 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 12:29:35,723 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 12:29:35,999 | INFO | Overall status for Google-DNS: UP
+2026-09-26 12:29:35,999 | INFO | Monitoring completed for Google-DNS
+2026-09-26 12:29:36,000 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 12:29:36,250 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 12:29:36,250 | INFO | Monitoring completed for Cloudflare-DNS
+2026-09-26 13:39:42,375 | INFO | Starting monitoring for MikroTik-Lab (192.168.10.1)
+2026-09-26 13:39:43,327 | INFO | Overall status for MikroTik-Lab: UP
+2026-09-26 13:39:43,327 | INFO | Monitoring completed for MikroTik-Lab
+2026-09-26 13:39:43,328 | INFO | Starting monitoring for Cisco-Lab (192.168.10.2)
+2026-09-26 13:39:58,573 | INFO | Overall status for Cisco-Lab: UP
+2026-09-26 13:39:58,573 | INFO | Monitoring completed for Cisco-Lab
+2026-09-26 13:39:58,574 | INFO | Starting monitoring for Google-DNS (8.8.8.8)
+2026-09-26 13:39:58,764 | INFO | Overall status for Google-DNS: UP
+2026-09-26 13:39:58,764 | INFO | Monitoring completed for Google-DNS
+2026-09-26 13:39:58,764 | INFO | Starting monitoring for Cloudflare-DNS (1.1.1.1)
+2026-09-26 13:39:58,997 | INFO | Overall status for Cloudflare-DNS: UP
+2026-09-26 13:39:58,997 | INFO | Monitoring completed for Cloudflare-DNS
