@@ -2,4 +2,4 @@ ping3
 requests
 librouteros==4.2.2
 python-dotenv
-paramiko
+netmiko==4.8.0

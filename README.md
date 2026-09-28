@@ -169,8 +169,6 @@ Network-Monitoring-Automation/
 │       ├── models.py
 │       └── reporter.py
 │
-├── tests/
-│
 ├── reports/
 │
 ├── .env
