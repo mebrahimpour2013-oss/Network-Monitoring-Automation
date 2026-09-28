@@ -40,6 +40,7 @@ Health Evaluation
       |
       v
    Monitoring Log
+   ```
 
 Vendor-specific collectors handle the differences between network platforms while the monitoring engine maintains a consistent health evaluation workflow.
 
