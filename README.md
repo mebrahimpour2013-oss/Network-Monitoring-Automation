@@ -296,7 +296,7 @@ Netmiko
 
 Cisco IOS
 
-Paramiko
+Netmiko
 
 Requests
 
