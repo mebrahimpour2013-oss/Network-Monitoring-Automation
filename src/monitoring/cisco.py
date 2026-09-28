@@ -1,8 +1,12 @@
-import subprocess
 from typing import Any
+
+from netmiko import ConnectHandler
 
 
 class CiscoCollector:
+    """
+    Read-only collector for Cisco IOS devices using Netmiko.
+    """
 
     def __init__(
         self,
@@ -10,64 +14,54 @@ class CiscoCollector:
         username: str,
         password: str,
         port: int = 22,
-        timeout: int = 5,
+        timeout: int = 10,
     ) -> None:
         self.host = host
         self.username = username
         self.password = password
         self.port = port
         self.timeout = timeout
+        self.connection = None
 
-    def execute(self, command: str) -> str:
-        ssh_command = [
-            "ssh",
-            "-o", "StrictHostKeyChecking=no",
-            "-o", "UserKnownHostsFile=NUL",
-            "-o", "KexAlgorithms=+diffie-hellman-group14-sha1",
-            "-o", "HostKeyAlgorithms=+ssh-rsa",
-            "-o", "PubkeyAcceptedAlgorithms=+ssh-rsa",
-            "-o", "Ciphers=+aes128-cbc",
-            "-o", "MACs=+hmac-sha1,hmac-sha1-96,hmac-md5,hmac-md5-96",
-            "-p", str(self.port),
-            f"{self.username}@{self.host}",
-            command,
-        ]
-
-        result = subprocess.run(
-            ssh_command,
-            input=f"{self.password}\n",
-            capture_output=True,
-            text=True,
-            timeout=self.timeout,
-            check=False,
+    def connect(self) -> None:
+        self.connection = ConnectHandler(
+            device_type="cisco_ios",
+            host=self.host,
+            username=self.username,
+            password=self.password,
+            port=self.port,
+            conn_timeout=self.timeout,
+            auth_timeout=self.timeout,
+            banner_timeout=self.timeout,
         )
 
-        if result.returncode != 0:
-            raise RuntimeError(
-                result.stderr.strip()
-                or "SSH command failed"
-            )
+    def close(self) -> None:
+        if self.connection is not None:
+            try:
+                self.connection.disconnect()
+            except Exception:
+                pass
+            finally:
+                self.connection = None
 
-        return result.stdout
+    def execute(self, command: str) -> str:
+        if self.connection is None:
+            self.connect()
+
+        return self.connection.send_command(command)
 
     def collect(self) -> dict[str, Any]:
         try:
-            version = self.execute(
-                "show version"
-            )
+            self.connect()
 
-            interfaces = self.execute(
-                "show ip interface brief"
-            )
-
+            version = self.execute("show version")
+            interfaces = self.execute("show ip interface brief")
             cpu = self.execute(
                 "show processes cpu | include CPU utilization"
             )
-
             memory = self.execute(
                 "show processes memory | include Processor"
             )
-
             uptime = self.execute(
                 "show version | include uptime"
             )
@@ -86,3 +80,6 @@ class CiscoCollector:
                 "status": "DOWN",
                 "error": str(exc),
             }
+
+        finally:
+            self.close()

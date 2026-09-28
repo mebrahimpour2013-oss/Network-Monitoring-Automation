@@ -3,7 +3,12 @@ from .config import load_config
 from .cisco import CiscoCollector
 from .mikrotik import MikroTikCollector
 from .models import CheckResult, CheckStatus, Device
-
+from .cisco_parser import (
+    parse_cpu,
+    parse_interfaces,
+    parse_memory,
+    parse_version,
+)
 
 def calculate_overall_status(
     results: list[CheckResult],
@@ -456,33 +461,19 @@ def check_mikrotik(
 
     return results
 
+def check_cisco(device: Device) -> list[CheckResult]:
+    results: list[CheckResult] = []
 
-def check_cisco(
-    device: Device,
-) -> list[CheckResult]:
-
-    username = device.metadata.get(
-        "username"
-    )
-
-    password = device.metadata.get(
-        "password"
-    )
-
-    ssh_port = device.metadata.get(
-        "ssh_port",
-        22,
-    )
+    username = device.metadata.get("username")
+    password = device.metadata.get("password")
+    ssh_port = int(device.metadata.get("ssh_port", 22))
 
     if not username or not password:
         return [
             CheckResult(
                 name="cisco_ssh",
-                status=CheckStatus.WARNING,
-                message=(
-                    "Cisco SSH credentials "
-                    "are not configured"
-                ),
+                status=CheckStatus.DOWN,
+                message="Cisco credentials are not configured",
             )
         ]
 
@@ -491,164 +482,150 @@ def check_cisco(
         username=username,
         password=password,
         port=ssh_port,
+        timeout=10,
     )
 
     data = collector.collect()
 
-    if data.get("status") == "DOWN":
+    if data.get("status") != "UP":
         return [
             CheckResult(
                 name="cisco_ssh",
                 status=CheckStatus.DOWN,
-                message=(
-                    "Cisco SSH check failed: "
-                    f"{data.get('error', 'Unknown error')}"
-                ),
+                message="Cisco SSH connection failed",
+                details={
+                    "error": data.get("error"),
+                },
             )
         ]
 
-    results: list[CheckResult] = []
-
-    version_output = data.get(
-        "version",
-        "",
+    version_data = parse_version(
+        data.get("version", "")
     )
 
-    interfaces_output = data.get(
-        "interfaces",
-        "",
+    cpu_data = parse_cpu(
+        data.get("cpu", "")
     )
 
-    cpu_output = data.get(
-        "cpu",
-        "",
+    memory_data = parse_memory(
+        data.get("memory", "")
     )
 
-    memory_output = data.get(
-        "memory",
-        "",
+    interfaces_data = parse_interfaces(
+        data.get("interfaces", "")
     )
 
-    uptime_output = data.get(
-        "uptime",
-        "",
-    )
     results.append(
         CheckResult(
             name="cisco_ssh",
             status=CheckStatus.UP,
-            message="Cisco SSH is reachable",
+            message="Cisco SSH connection successful",
         )
     )
 
     results.append(
         CheckResult(
             name="cisco_version",
-            status=(
-                CheckStatus.UP
-                if version_output
-                else CheckStatus.WARNING
-            ),
+            status=CheckStatus.UP,
             message=(
-                "Cisco IOS version information collected"
-                if version_output
-                else (
-                    "Cisco IOS version information "
-                    "unavailable"
-                )
+                f"Cisco IOS version: "
+                f"{version_data.get('version', 'Unknown')}"
             ),
-            details={
-                "output": version_output[:2000],
-            },
+            details=version_data,
         )
     )
 
-    results.append(
-        CheckResult(
-            name="cisco_interfaces",
-            status=(
-                CheckStatus.UP
-                if interfaces_output
-                else CheckStatus.WARNING
-            ),
-            message=(
-                "Cisco interface information collected"
-                if interfaces_output
-                else (
-                    "Cisco interface information "
-                    "unavailable"
-                )
-            ),
-            details={
-                "output": interfaces_output[:2000],
-            },
-        )
+    cpu_usage = cpu_data.get(
+        "cpu_5_seconds_percent"
     )
 
-    results.append(
-        CheckResult(
-            name="cisco_cpu",
-            status=(
-                CheckStatus.UP
-                if cpu_output
-                else CheckStatus.WARNING
-            ),
-            message=(
-                "Cisco CPU information collected"
-                if cpu_output
-                else (
-                    "Cisco CPU information "
-                    "unavailable"
-                )
-            ),
-            details={
-                "output": cpu_output[:2000],
-            },
+    if cpu_usage is not None:
+        if cpu_usage >= 90:
+            cpu_status = CheckStatus.DOWN
+        elif cpu_usage >= 75:
+            cpu_status = CheckStatus.WARNING
+        else:
+            cpu_status = CheckStatus.UP
+
+        results.append(
+            CheckResult(
+                name="cisco_cpu",
+                status=cpu_status,
+                message=f"Cisco CPU usage: {cpu_usage}%",
+                value=cpu_usage,
+                details=cpu_data,
+            )
         )
+
+    memory_usage = memory_data.get(
+        "usage_percent"
     )
 
-    results.append(
-        CheckResult(
-            name="cisco_memory",
-            status=(
-                CheckStatus.UP
-                if memory_output
-                else CheckStatus.WARNING
-            ),
-            message=(
-                "Cisco memory information collected"
-                if memory_output
-                else (
-                    "Cisco memory information "
-                    "unavailable"
-                )
-            ),
-            details={
-                "output": memory_output[:2000],
-            },
-        )
-    )
+    if memory_usage is not None:
+        if memory_usage >= 90:
+            memory_status = CheckStatus.DOWN
+        elif memory_usage >= 80:
+            memory_status = CheckStatus.WARNING
+        else:
+            memory_status = CheckStatus.UP
 
-    results.append(
-        CheckResult(
-            name="cisco_uptime",
-            status=(
-                CheckStatus.UP
-                if uptime_output
-                else CheckStatus.WARNING
-            ),
-            message=(
-                "Cisco uptime information collected"
-                if uptime_output
-                else (
-                    "Cisco uptime information "
-                    "unavailable"
-                )
-            ),
-            details={
-                "output": uptime_output[:2000],
-            },
+        results.append(
+            CheckResult(
+                name="cisco_memory",
+                status=memory_status,
+                message=(
+                    f"Cisco memory usage: "
+                    f"{memory_usage}%"
+                ),
+                value=memory_usage,
+                details=memory_data,
+            )
         )
-    )
+
+    if interfaces_data:
+        operational = [
+            interface
+            for interface in interfaces_data
+            if interface.get("status") == "up"
+            and interface.get("protocol") == "up"
+        ]
+
+        protocol_issues = [
+            interface
+            for interface in interfaces_data
+            if interface.get("status") == "up"
+            and interface.get("protocol") != "up"
+        ]
+
+        inactive = [
+            interface
+            for interface in interfaces_data
+            if interface.get("status") == "down"
+        ]
+
+        interface_status = (
+            CheckStatus.WARNING
+            if protocol_issues
+            else CheckStatus.UP
+        )
+
+        results.append(
+            CheckResult(
+                name="cisco_interfaces",
+                status=interface_status,
+                message=(
+                    f"{len(interfaces_data)} interfaces detected; "
+                    f"{len(operational)} operational, "
+                    f"{len(inactive)} inactive, "
+                    f"{len(protocol_issues)} with protocol issues"
+                ),
+                value=len(interfaces_data),
+                details={
+                    "operational": operational,
+                    "inactive": inactive,
+                    "protocol_issues": protocol_issues,
+                },
+            )
+        )
 
     return results

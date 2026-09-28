@@ -1,2 +1,6 @@
 .env
 config/*.local.json
+reports/
+__pycache__/
+*.pyc
+.venv/
