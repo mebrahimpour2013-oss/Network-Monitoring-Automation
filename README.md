@@ -18,7 +18,7 @@ This project automates these operational checks and provides a standardized heal
 
 The monitoring engine provides a common workflow across different network vendors:
 
-`text
+`````text
 Network Devices
       |
       v
